@@ -14,13 +14,13 @@
  
       ul {
         position: absolute;
-        left: 640px;
-        top: 30px;
+        left: 340px;
+        top: 90px;
         list-style-type: none;
       }
  
       #repos {
-        top: 130px;
+        top: 230px;
       }
  
       a {
@@ -36,7 +36,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(function() {
-        var limit = 10 // how many repos to list
+        var limit = 100 // how many repos to list
         var login = 'domix'//user // your username
  
         $.getJSON('http://github.com/api/v1/json/' + login + '?callback=?', function(data) {
@@ -57,6 +57,8 @@
   </head>
   <body>
     <ul>
+      <li><a href="http://domix.org">My Blog</a></li>
+      <li><a href="http://synergyj.com">My Company</a></li>
       <li><a href="http://twitter.com/domix">My Twitter profile</a></li>
       <li><a href="http://github.com/domix">My GitHub projects</a></li>
       <li><a href="mailto:domingo.suarez@gmail.com">domingo.suarez@gmail.com</a></li>
